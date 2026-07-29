@@ -1,5 +1,5 @@
 # India-First 120B LLM — Data Mixture & Training Plan
-### ERA V5 · Assignment 5
+### ERA V5
 
 ---
 
