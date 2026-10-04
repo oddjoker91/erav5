@@ -1,0 +1,1 @@
+step,tokens,loss_tokens,loss,ppl,val_loss,val_ppl,grad_norm,tok_per_s,lr,alloc_mb,peak_mb,reserved_mb,gpu_used_mb,gpu_total_mb,recon_err
