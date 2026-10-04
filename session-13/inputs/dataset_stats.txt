@@ -1,0 +1,7 @@
+=== dataset stats ===
+scanned: /kaggle/working/data/shards
+split   shards          tokens         docs  tok/doc        size
+train      557     556,312,904        5,435 102357.5    3338.0MB
+val          6       5,616,737           56 100298.9      33.7MB
+TOTAL              561,929,641                          3371.7MB  (3.37 GB)
+total tokens = 561,929,641  (561.93M)
