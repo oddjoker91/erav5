@@ -1,0 +1,6 @@
+Work with your agents and create a simple 32 virtual GPUs (can be your CPU threads or Colab GPU). 
+Then write a demo model that runs on top of these. Simulate ZeRO, ZeRO1, ZeRO2, and ZeRO3. 
+Show how the memory and computation chanages.
+
+Submit your ipynb notebook, and GitHub Repo link with a detailed README 
+that explains that YOU have understood these concepts (and not your agent).
