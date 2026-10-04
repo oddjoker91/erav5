@@ -25,8 +25,9 @@ Train a ~20M LLM on ~55M tokens, then again with reversible layers at a large ba
 
 | | Baseline | Baseline | Reversible |
 |---|---|---|---|
-| Batch | 64 | 120 | 512 |
-| Tokens / step | 32,768 | 61,440 | 262,144 |
+| Batch (sequences per GPU) | 64 | 120 | 512 |
+| Global batch (× 2 GPUs) | 128 | 240 | 1,024 |
+| Tokens / step (global batch × 256) | 32,768 | 61,440 | 262,144 |
 | Steps | 1,678 | 895 | 210 |
 | Tokens seen | 54.98M | 54.99M | 55.05M |
 | **Final train loss** | 2.184 | 2.567 | 3.901 |
@@ -41,7 +42,7 @@ Train a ~20M LLM on ~55M tokens, then again with reversible layers at a large ba
 | Activation memory per sequence | 115 MB | 116 MB | **21 MB** |
 | Rebuild error | — | — | 2.1e-5 |
 
-*Activation memory per sequence = (peak − allocated weights/optimizer) ÷ batch.*
+*Every sequence is 256 tokens. Memory figures are per GPU. Activation memory per sequence = (peak − allocated weights/optimizer) ÷ per-GPU batch.*
 
 ## Memory held by the model (per GPU)
 
