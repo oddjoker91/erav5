@@ -1,0 +1,2 @@
+Train a Linear model and convert that into an MoE! Your call on model size and data trained on, 
+but must show they continue to train and reduce loss!
