@@ -1,4 +1,4 @@
-# Session 10 — Making a small model tell the truth
+# Session 10
 
 A 2-layer GPT (D=256, 8 heads, T=256, V=4002, about 4.2M params) on TinyStories, trained for 300 steps with AdamW at lr 3e-4.
 
