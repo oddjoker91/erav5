@@ -1,0 +1,6 @@
+Reproduce Adam by hand. Take one weight and five gradients, compute m, v, m_hat, v_hat and the resulting step yourself, then check each against PyTorch. They should agree to several decimal places.
+Disable bias correction and plot the first twenty steps both ways. Report the number of steps after which the difference stops mattering.
+Log the update-to-weight ratio for every layer, and identify the step at which warmup stops changing it.
+Train the same model twice for 300 steps, once under cosine and once under WSD, and stop both at step 200. Report both losses and state which model you would keep.
+Sweep the learning rate at widths 256, 512 and 1,024, plot loss against learning rate, and mark the three minima. State the value you would use at width 4,096 and how confident you are in it.
+Tune both sides before accepting a comparison. Almost every optimizer claim that failed to replicate was a well tuned method measured against a badly tuned one.
